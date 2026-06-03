@@ -2,6 +2,18 @@
 <html>
     <head>
         <style>
+            
+            body{
+                background-color: #ffffff;
+                font-family: Arial, sans-serif;
+            }
+
+            table,th,td{
+                border:1px solid black;
+                border-collapse: collapse;
+                padding:5px;
+            }
+
             nav{
                 display:flex;
                 flex-direction:row;
@@ -9,13 +21,26 @@
                 justify-content:center;
             }
             h2{
-                background-color: darkgrey;
+                background-color:darkgray;
+            }
+            .span{
+                display:flex;
+                flex-direction:row;
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
             }
         </style>
     </head>
     <body>
     <header>
         <h1 align="center">Venkata Kishore Yerramsetti</h1>
+        <div class="span">
+            <span>Location: India </span>
+        <span>Experience: 2.8years</span>
+        <span>Interested in Backend Development</span>
+        </div>
+        
         <h4 align="center">Java FullStack Developer</h4>
     </header>
     <nav>
@@ -25,7 +50,7 @@
     </nav>
     <main>
         <section id="about">
-    <h2>About Me</h2>
+    <h2>About</h2>
     <p>
         I am passionate about software development and have experience in Java, Spring Boot, and React. I enjoy building scalable web applications and learning new technologies to enhance my skills. In my free time, I like to contribute to open-source projects and stay updated with the latest trends in the tech industry.
     </p>
@@ -34,14 +59,52 @@
 
 <section>
     <h2>Skills</h2>
-    <ul>
-        <li>Java</li>
-        <li>SpringBoot</li>
-        <li>Html</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-    </ul>
+    <table>
+        <tr>
+           <td>Programming Languages</td>
+           <td>Java,SQL</td>
+        </tr>
+        <tr>
+            <td>Frameworks</td>
+            <td>Spring Boot,Spring MVC,Spring DataJpa,Hibernate</td>
+        </tr>
+        <tr>
+            <td>Microservices & API's</td>
+            <td>Microservices Architecture, RESTful Web Services, REST APIs</td>
+        </tr>
+        <tr>
+            <td>Messaging / Streaming</td>
+            <td>RabbitMQ, Apache Kafka</td>
+        </tr>
+        <tr>
+            <td>Database</td>
+            <td>MySQL, PostgreSQL</td>
+        </tr>
+        <tr>
+            <td>Build & CI/CD</td>
+            <td>Gradle, Maven, Jenkins, Git, GitHub</td>
+        </tr>
+        <tr>
+            <td>Server & Tools</td>
+            <td>Tomcat,Nginx, Docker</td>
+        </tr>
+        <tr>
+            <td>Cloud Platforms</td>
+            <td>Azure</td>
+        </tr>
+        <tr>
+            <td>AI Tools</td>
+            <td>ChatGPT, GitHub Copilot, Claude</td>
+        </tr>
+        <tr>
+            <td>Methodologies</td>
+            <td>Agile, Scrum</td>
+        </tr>
+        <tr>
+            <td>Operating Systems</td>
+            <td>Windows, Linux</td>
+        </tr>
+    </table>
 </section>
 
      <section id="projects">
