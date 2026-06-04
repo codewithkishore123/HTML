@@ -1,155 +1,221 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            
-            body{
-                background-color: #ffffff;
-                font-family: Arial, sans-serif;
-            }
+<head>
+    <title>Portfolio</title>
 
-            table,th,td{
-                border:1px solid black;
-                border-collapse: collapse;
-                padding:5px;
-            }
+    <style>
 
-            nav{
-                display:flex;
-                flex-direction:row;
-                gap:20px;
-                justify-content:center;
-            }
-            h2{
-                background-color:darkgray;
-            }
-            .span{
-                display:flex;
-                flex-direction:row;
-                gap: 30px;
-                justify-content: center;
-            }
-        </style>
-    </head>
-    <body>
-    <header>
-        <h1 align="center">Venkata Kishore Yerramsetti</h1>
-        <div class="span">
-        <span>Location: India </span>
-        <span>Experience: 2.8years</span>
-        <span>Interested in Backend Development</span>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+
+        .header-container{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+
+        .profile-pic{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+
+        .header-content{
+            flex: 1;
+            text-align: center;
+        }
+
+        .info-row{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        nav a{
+            font-size: 24px;
+        }
+
+        /* Section headings */
+
+        h2{
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+        /* Table */
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        th, td{
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Main content */
+
+        main{
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header-container">
+
+        <img src="C:\Users\Procucev\Downloads\passportsize_image.jpg"
+             alt="Profile Picture"
+             class="profile-pic">
+
+        <div class="header-content">
+
+            <h1>Venkata Kishore Yerramsetti</h1>
+
+            <div class="info-row">
+                <span>Location: India</span>
+                <span>Experience: 2.8 Years</span>
+                <span>Interested in Backend Development</span>
+            </div>
+
+            <h3>Java FullStack Developer</h3>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
         </div>
-        
-        <h4 align="center">Java FullStack Developer</h4>
+
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+
+    <!-- MAIN CONTENT -->
+
     <main>
+
         <section id="about">
-    <h2>About</h2>
-    <p>
-        I am passionate about software development and have experience in Java, Spring Boot, and React. I enjoy building scalable web applications and learning new technologies to enhance my skills. In my free time, I like to contribute to open-source projects and stay updated with the latest trends in the tech industry.
-    </p>
-</section>
+            <h2>About</h2>
 
+            <p>
+                I am passionate about software development and have experience
+                in Java, Spring Boot, and React. I enjoy building scalable web
+                applications and learning new technologies to enhance my skills.
+            </p>
+        </section>
 
-<section>
-    <h2>Skills</h2>
-    <table>
-        <tr>
-           <td>Programming Languages</td>
-           <td>Java,SQL</td>
-        </tr>
-        <tr>
-            <td>Frameworks</td>
-            <td>Spring Boot,Spring MVC,Spring DataJpa,Hibernate</td>
-        </tr>
-        <tr>
-            <td>Microservices & API's</td>
-            <td>Microservices Architecture, RESTful Web Services, REST APIs</td>
-        </tr>
-        <tr>
-            <td>Messaging / Streaming</td>
-            <td>RabbitMQ, Apache Kafka</td>
-        </tr>
-        <tr>
-            <td>Database</td>
-            <td>MySQL, PostgreSQL</td>
-        </tr>
-        <tr>
-            <td>Build & CI/CD</td>
-            <td>Gradle, Maven, Jenkins, Git, GitHub</td>
-        </tr>
-        <tr>
-            <td>Server & Tools</td>
-            <td>Tomcat,Nginx, Docker</td>
-        </tr>
-        <tr>
-            <td>Cloud Platforms</td>
-            <td>Azure</td>
-        </tr>
-        <tr>
-            <td>AI Tools</td>
-            <td>ChatGPT, GitHub Copilot, Claude</td>
-        </tr>
-        <tr>
-            <td>Methodologies</td>
-            <td>Agile, Scrum</td>
-        </tr>
-        <tr>
-            <td>Operating Systems</td>
-            <td>Windows, Linux</td>
-        </tr>
-    </table>
-</section>
+        <section>
+            <h2>Skills</h2>
 
-     <section id="projects">
-    <h2>Projects</h2>
+            <table>
 
-    <article>
-        <h3>UPI(UNIFIED PAYMENTS INTERFACE)</h3>
-        <p>
-            UPI is a real-time payment system that enables users to link multiple bank accounts to a single mobile application, allowing for seamless and instant money transfers. It provides a convenient and secure way to make payments, check account balances, and manage finances through a user-friendly interface. UPI has revolutionized digital payments in India, making transactions faster and more accessible for millions of users.
-        </p>
-    </article>
+                <tr>
+                    <td>Programming Languages</td>
+                    <td>Java, SQL</td>
+                </tr>
 
-    <article>
-        <h3>IMPS(IMMEDIATE PAYMENT SERVICE)</h3>
-        <p>
-            IMPS is a real-time payment system that allows users to transfer money instantly between bank accounts using a mobile application. It provides a secure and convenient way to make payments, check account balances, and manage finances. IMPS has made digital payments more accessible and efficient for users in India.
-        </p>
-    </article>
+                <tr>
+                    <td>Frameworks</td>
+                    <td>Spring Boot, Spring MVC, Hibernate</td>
+                </tr>
 
-    <article>
-        <h3>QUA.AI</h3>
-        <p>
-            QUA.AI is an innovative artificial intelligence platform designed to provide intelligent solutions for various business needs. It leverages cutting-edge machine learning algorithms to deliver personalized experiences and actionable insights, helping organizations optimize their operations and drive growth.
-        </p>
-    </article>
-</section>
+                <tr>
+                    <td>Microservices</td>
+                    <td>REST APIs, Microservices Architecture</td>
+                </tr>
 
-<aside>
-    <h3>Quick Facts</h3>
+                <tr>
+                    <td>Database</td>
+                    <td>MySQL, PostgreSQL</td>
+                </tr>
 
-    <ul>
-        <li>Location: India</li>
-        <li>Experience: Fresher</li>
-        <li>Interested in Backend Development</li>
-    </ul>
-</aside>
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, GitHub, Maven, Jenkins, Docker</td>
+                </tr>
 
-<section id="contact">
-    <h2>Contact Me</h2>
+            </table>
+        </section>
 
-    <p>Email: venkatakishore060@gmail.com</p>
-</section>
+        <section id="projects">
 
-<footer>
-    <p>© 2026 Venkata Kishore</p>
-</footer>
+            <h2>Projects</h2>
+
+            <article>
+                <h3>UPI</h3>
+
+                <p>
+                    Real-time payment system enabling seamless money transfers.
+                </p>
+            </article>
+
+            <article>
+                <h3>IMPS</h3>
+
+                <p>
+                    Immediate payment service for instant fund transfers.
+                </p>
+            </article>
+
+            <article>
+                <h3>QUA.AI</h3>
+
+                <p>
+                    AI-powered platform delivering intelligent business solutions.
+                </p>
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h3>Quick Facts</h3>
+
+            <ul>
+                <li>Location: India</li>
+                <li>Experience: 2.8 Years</li>
+                <li>Backend Development Enthusiast</li>
+            </ul>
+
+        </aside>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>Email: venkatakishore060@gmail.com</p>
+
+        </section>
+
     </main>
-    </body>
+
+    <footer style="text-align:center; padding:20px;">
+        © 2026 Venkata Kishore
+    </footer>
+
+</body>
 </html>
