@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+
+        .header-container{
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+
+        .profile-pic{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            margin-right: 40px;
+        }
+
+        .header-content{
+            flex: 1;
+            text-align: center;
+        }
+
+        .info-row{
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        nav a{
+            font-size: 24px;
+        }
+
+        /* Section headings */
+
+        h2{
+            background-color: darkgray;
+            padding: 10px;
+        }
+
+        /* Table */
+
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+        }
+
+        th, td{
+            padding: 8px;
+            text-align: left;
+        }
+
+        /* Main content */
+
+        main{
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header-container">
+
+        <img src="C:\Users\Procucev\Downloads\passportsize_image.jpg"
+             alt="Profile Picture"
+             class="profile-pic">
+
+        <div class="header-content">
+
+            <h1>Venkata Kishore Yerramsetti</h1>
+
+            <div class="info-row">
+                <span>Location: India</span>
+                <span>Experience: 2.8 Years</span>
+                <span>Interested in Backend Development</span>
+            </div>
+
+            <h3>Java FullStack Developer</h3>
+
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+
+        <section id="about">
+            <h2>About</h2>
+
+            <p>
+                I am passionate about software development and have experience
+                in Java, Spring Boot, and React. I enjoy building scalable web
+                applications and learning new technologies to enhance my skills.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+
+            <table>
+
+                <tr>
+                    <td>Programming Languages</td>
+                    <td>Java, SQL</td>
+                </tr>
+
+                <tr>
+                    <td>Frameworks</td>
+                    <td>Spring Boot, Spring MVC, Hibernate</td>
+                </tr>
+
+                <tr>
+                    <td>Microservices</td>
+                    <td>REST APIs, Microservices Architecture</td>
+                </tr>
+
+                <tr>
+                    <td>Database</td>
+                    <td>MySQL, PostgreSQL</td>
+                </tr>
+
+                <tr>
+                    <td>Tools</td>
+                    <td>Git, GitHub, Maven, Jenkins, Docker</td>
+                </tr>
+
+            </table>
+        </section>
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <article>
+                <h3>UPI</h3>
+
+                <p>
+                    Real-time payment system enabling seamless money transfers.
+                </p>
+            </article>
+
+            <article>
+                <h3>IMPS</h3>
+
+                <p>
+                    Immediate payment service for instant fund transfers.
+                </p>
+            </article>
+
+            <article>
+                <h3>QUA.AI</h3>
+
+                <p>
+                    AI-powered platform delivering intelligent business solutions.
+                </p>
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h3>Quick Facts</h3>
+
+            <ul>
+                <li>Location: India</li>
+                <li>Experience: 2.8 Years</li>
+                <li>Backend Development Enthusiast</li>
+            </ul>
+
+        </aside>
+
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>Email: venkatakishore060@gmail.com</p>
+
+        </section>
+
+    </main>
+
+    <footer style="text-align:center; padding:20px;">
+        © 2026 Venkata Kishore
+    </footer>
+
+</body>
+</html>
