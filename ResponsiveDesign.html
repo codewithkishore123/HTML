@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+.header-container{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    padding:20px;
+    background-color:#eeeeee;
+}
+
+.profile-pic{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+}
+
+.header-content{
+    flex:1;
+}
+
+/* NAVIGATION */
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    background-color:#333;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* MAIN */
+
+main{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+section{
+    margin-top:30px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+/* SKILLS GRID */
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.skill-card{
+    border:1px solid gray;
+    padding:20px;
+    text-align:center;
+}
+
+/* PROJECT GRID */
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.project-card{
+    border:1px solid gray;
+    padding:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    background-color:#333;
+    color:white;
+    padding:20px;
+    margin-top:30px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width:768px){
+
+    .header-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="header-container">
+
+        <img src="C:\Users\Procucev\Downloads\passportsize_image.jpg"
+             alt="Profile Photo"
+             class="profile-pic">
+
+        <div class="header-content">
+            <h1>Venkata Kishore Yerramsetti</h1>
+            <h3>Java FullStack Developer</h3>
+        </div>
+
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+
+            <p>
+                Passionate Java FullStack Developer with experience
+                in Java, Spring Boot, Microservices, Kafka and React.
+            </p>
+        </section>
+
+        <section id="skills">
+
+            <h2>Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">Java</div>
+                <div class="skill-card">Spring Boot</div>
+                <div class="skill-card">Kafka</div>
+                <div class="skill-card">Docker</div>
+                <div class="skill-card">MySQL</div>
+                <div class="skill-card">React</div>
+
+            </div>
+
+        </section>
+
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <h3>UPI</h3>
+                    <p>Unified Payments Interface project.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>IMPS</h3>
+                    <p>Immediate Payment Service project.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>QUA.AI</h3>
+                    <p>AI-powered business platform.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Future Project</h3>
+                    <p>Coming Soon...</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>Email: yourmail@gmail.com</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Venkata Kishore</p>
+    </footer>
+
+</body>
+</html>
